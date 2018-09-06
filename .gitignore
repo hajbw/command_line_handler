@@ -30,3 +30,8 @@
 *.exe
 *.out
 *.app
+
+#User Defined
+
+#hajbw-lib folder
+/hlib/
