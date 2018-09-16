@@ -25,7 +25,9 @@
 enum STAT_CODE
 {
 	ORDINARY,
-	EXIT
+	EXIT,
+	COMMAND_UNDEFINED,
+	UNDEFIND_ERROR = -1
 };
 
 #endif
