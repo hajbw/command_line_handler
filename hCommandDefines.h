@@ -3,8 +3,8 @@
 	hCommandDefines.h : hCommand constant and definitions
 
 */
-
-#define _H_COMMAND_DEFINES 1
+#ifndef	_H_COMMAND_DEFINES
+#define _H_COMMAND_DEFINES
 
 /*
 	version code definition
@@ -22,8 +22,10 @@
 #define VERSION_CODE	1
 #define BUILD_CODE		1
 
-typedef int STAT_CODE;
+enum STAT_CODE
+{
+	ORDINARY,
+	EXIT
+};
 
-#define ORDINARY_RETURN	0
-#define EXIT_SHELL		1
-
+#endif
